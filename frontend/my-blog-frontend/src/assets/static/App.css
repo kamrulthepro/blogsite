@@ -1,0 +1,298 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.blog-img {
+  border-radius: 25px;
+  height: min-content;
+  width: 100%;
+}
+
+.navbar {
+  background: linear-gradient(
+    135deg,
+    rgb(36, 124, 240) 60%,
+    rgb(56, 63, 172) 10%
+  );
+  background-color: #eee;
+  color: white;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+}
+
+.navlinks {
+  justify-content: center;
+  width: 20%;
+}
+
+.navlink {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-underline-offset: 0px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.nav-image {
+  background-color: antiquewhite;
+  width: 30%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.search {
+  background-color: antiquewhite;
+  width: fit-content;
+  height: 30px;
+}
+
+.search_res {
+  width: 20%;
+}
+
+.logo {
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 20px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 30%;
+  background: #f8f8f8;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.blog-item {
+  background: linear-gradient(
+    135deg,
+    rgb(36, 124, 240) 10%,
+    rgb(56, 63, 172) 90%
+  );
+  font-family: monospace;
+  padding: 10px;
+  color: #eee;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item:hover {
+  background: #000000;
+}
+
+.blog-item-content {
+  display: flex;
+}
+
+.blogitem-img {
+  display: flex;
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+.blog-content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.update-button {
+  background: rgb(11, 56, 180);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 20px;
+}
+
+.delete-button {
+  background: rgb(201, 14, 14);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 20px;
+}
+
+.logout {
+  background: rgb(5, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+}
+
+.create-blog {
+  background: linear-gradient(
+    135deg,
+    rgb(17, 17, 16) 0%,
+    rgb(156, 153, 152) 100%
+  );
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.create-blog input,
+.create-blog textarea {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+.create-blog textarea {
+  height: 100px;
+  resize: none;
+}
+.create-blog input:focus,
+.create-blog textarea:focus {
+  outline: none;
+  border-color: rgb(221, 218, 214);
+  box-shadow: 0 0 5px rgba(12, 8, 3, 0.8);
+}
+.create-blog button {
+  background: rgb(21, 236, 21);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.create-blog button:hover {
+  background: rgb(24, 23, 22);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-image {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .create-blog {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .create-blog input,
+  .create-blog textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navlink {
+    font-size: medium;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .blog-item {
+    padding: 5px;
+    font-size: small;
+  }
+
+  .update-button,
+  .delete-button,
+  .logout {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .create-blog button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .sidebar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .blog-item {
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    width: min-content;
+    align-items: center;
+    font-size: smaller;
+  }
+
+  .blogitem-img {
+    display: hidden;
+  }
+}
