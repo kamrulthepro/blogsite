@@ -31,7 +31,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/Karthik-02/blogsite.git
+git clone https://github.com/kamrulthepro/blogsite/
 
 # Navigate into the project folder
 cd blogsite
@@ -70,9 +70,9 @@ Contributions are welcome! 🎉 Feel free to fork the repo and submit a PR. Foll
 
 ## 🌎 Connect with Me
 
-💼 [LinkedIn](https://www.linkedin.com/in/karthik-sivagnanam-140a581b9/)  
-📧 Email: karthik04siva@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/kamrulthepro/)  
+📧 Email: mdkamrulkhan995@gmail.com
 
 ---
 
-💙 If you like this project, give it a ⭐ on [GitHub](https://github.com/Karthik-02/blogsite)!
+💙 If you like this project, give it a ⭐ on [GitHub](https://github.com/kamrulthepro/blogsite/)!
